@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=naiversity
+POSTGRES_USER=BfeJtNqsDbniiBJOoadbnUZIhHvmLojG
+POSTGRES_PASSWORD=thQ9DV7ZTgnIwps71ae8rheopCwY329MJvat2Bi3m7pa3gBnegj8UB5hnUpzw8Eu
