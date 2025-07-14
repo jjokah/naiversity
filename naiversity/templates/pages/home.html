@@ -1,1 +1,351 @@
 {% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}
+  Naiversity - Discover Nigeria's Rich Heritage
+{% endblock title %}
+{% block content %}
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="hero-content">
+            <h1 class="display-4 fw-bold mb-4">
+              Discover Nigeria's Rich <span class="text-warning">Cultural Heritage</span>
+            </h1>
+            <p class="lead mb-4">
+              Experience the vibrant traditions, languages, and customs of Nigeria through our AI-powered platform.
+              Connect with your roots and preserve cultural heritage for future generations.
+            </p>
+            <div class="d-flex gap-3 flex-wrap">
+              <a href="{% url 'account_signup' %}" class="btn btn-light btn-lg">
+                <i class="fas fa-rocket me-2"></i>Get Started
+              </a>
+              <a href="{% url 'about' %}" class="btn btn-outline-light btn-lg">
+                <i class="fas fa-play me-2"></i>Learn More
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="text-center">
+            <div class="hero-flag">🇳🇬</div>
+            <div class="hero-emojis d-flex justify-content-center gap-3 mt-4">
+              <span>🎭</span>
+              <span>🥁</span>
+              <span>👘</span>
+              <span>🎪</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Features Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row text-center mb-5">
+        <div class="col-lg-8 mx-auto">
+          <h2 class="display-5 fw-bold mb-4">Preserve & Celebrate Nigerian Culture</h2>
+          <p class="lead text-muted">
+            Our AI-powered platform helps you explore, understand, and preserve Nigeria's diverse cultural heritage
+          </p>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card feature-card h-100 p-4 fade-in">
+            <div class="feature-icon">
+              <i class="fas fa-brain"></i>
+            </div>
+            <h4 class="text-center mb-3">AI-Powered Learning</h4>
+            <p class="text-center text-muted">
+              Learn about Nigerian traditions, languages, and customs through intelligent, personalized experiences
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card feature-card h-100 p-4 fade-in">
+            <div class="feature-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h4 class="text-center mb-3">Cultural Community</h4>
+            <p class="text-center text-muted">Connect with fellow Nigerians and cultural enthusiasts from around the world</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card feature-card h-100 p-4 fade-in">
+            <div class="feature-icon">
+              <i class="fas fa-archive"></i>
+            </div>
+            <h4 class="text-center mb-3">Heritage Preservation</h4>
+            <p class="text-center text-muted">Help preserve and document Nigerian cultural practices for future generations</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Cultural Highlights Section -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="row text-center mb-5">
+        <div class="col-lg-8 mx-auto">
+          <h2 class="display-5 fw-bold mb-4">Explore Nigeria's Diversity</h2>
+          <p class="lead text-muted">
+            From the northern savanna to the southern coast, Nigeria's 250+ ethnic groups create a rich tapestry of culture
+          </p>
+        </div>
+      </div>
+      <div class="culture-grid">
+        <div class="culture-card fade-in">
+          <div class="culture-image">
+            <span>🎭</span>
+          </div>
+          <div class="p-4">
+            <h5 class="fw-bold">Traditional Arts</h5>
+            <p class="text-muted mb-3">Explore traditional sculptures, textiles, and crafts from across Nigeria's regions</p>
+            <div class="d-flex justify-content-between text-primary">
+              <small><i class="fas fa-palette me-1"></i>Sculptures</small>
+              <small><i class="fas fa-tshirt me-1"></i>Textiles</small>
+              <small><i class="fas fa-hammer me-1"></i>Crafts</small>
+            </div>
+          </div>
+        </div>
+        <div class="culture-card fade-in">
+          <div class="culture-image">
+            <span>🗣️</span>
+          </div>
+          <div class="p-4">
+            <h5 class="fw-bold">Languages</h5>
+            <p class="text-muted mb-3">Discover over 500 languages spoken across Nigeria, from Hausa to Yoruba to Igbo</p>
+            <div class="d-flex justify-content-between text-primary">
+              <small><i class="fas fa-language me-1"></i>Hausa</small>
+              <small><i class="fas fa-language me-1"></i>Yoruba</small>
+              <small><i class="fas fa-language me-1"></i>Igbo</small>
+            </div>
+          </div>
+        </div>
+        <div class="culture-card fade-in">
+          <div class="culture-image">
+            <span>🎪</span>
+          </div>
+          <div class="p-4">
+            <h5 class="fw-bold">Festivals</h5>
+            <p class="text-muted mb-3">Experience vibrant festivals like Eyo, Durbar, and New Yam celebrations</p>
+            <div class="d-flex justify-content-between text-primary">
+              <small><i class="fas fa-star me-1"></i>Eyo</small>
+              <small><i class="fas fa-horse me-1"></i>Durbar</small>
+              <small><i class="fas fa-seedling me-1"></i>New Yam</small>
+            </div>
+          </div>
+        </div>
+        <div class="culture-card fade-in">
+          <div class="culture-image">
+            <span>🍲</span>
+          </div>
+          <div class="p-4">
+            <h5 class="fw-bold">Cuisine</h5>
+            <p class="text-muted mb-3">Savor the flavors of jollof rice, suya, egusi soup, and other traditional dishes</p>
+            <div class="d-flex justify-content-between text-primary">
+              <small><i class="fas fa-bowl-rice me-1"></i>Jollof</small>
+              <small><i class="fas fa-fire me-1"></i>Suya</small>
+              <small><i class="fas fa-soup me-1"></i>Egusi</small>
+            </div>
+          </div>
+        </div>
+        <div class="culture-card fade-in">
+          <div class="culture-image">
+            <span>🥁</span>
+          </div>
+          <div class="p-4">
+            <h5 class="fw-bold">Music & Dance</h5>
+            <p class="text-muted mb-3">From traditional drums to modern Afrobeats, experience Nigeria's musical heritage</p>
+            <div class="d-flex justify-content-between text-primary">
+              <small><i class="fas fa-drum me-1"></i>Drums</small>
+              <small><i class="fas fa-music me-1"></i>Afrobeats</small>
+              <small><i class="fas fa-dancer me-1"></i>Dance</small>
+            </div>
+          </div>
+        </div>
+        <div class="culture-card fade-in">
+          <div class="culture-image">
+            <span>📚</span>
+          </div>
+          <div class="p-4">
+            <h5 class="fw-bold">Stories & Folklore</h5>
+            <p class="text-muted mb-3">Listen to ancient tales, proverbs, and oral traditions passed down through generations</p>
+            <div class="d-flex justify-content-between text-primary">
+              <small><i class="fas fa-book me-1"></i>Tales</small>
+              <small><i class="fas fa-quote-left me-1"></i>Proverbs</small>
+              <small><i class="fas fa-microphone me-1"></i>Oral</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Statistics Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row text-center mb-5">
+        <div class="col-lg-8 mx-auto">
+          <h2 class="display-5 fw-bold mb-4">Nigeria by the Numbers</h2>
+          <p class="lead text-muted">The incredible diversity and scale of Nigerian culture</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="stat-item fade-in">
+            <div class="stat-number">250+</div>
+            <h6 class="text-muted">Ethnic Groups</h6>
+            <p class="small text-muted">Each with unique traditions</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="stat-item fade-in">
+            <div class="stat-number">500+</div>
+            <h6 class="text-muted">Languages</h6>
+            <p class="small text-muted">Spoken across the nation</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="stat-item fade-in">
+            <div class="stat-number">36</div>
+            <h6 class="text-muted">States</h6>
+            <p class="small text-muted">Each with distinct culture</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="stat-item fade-in">
+            <div class="stat-number">200M+</div>
+            <h6 class="text-muted">People</h6>
+            <p class="small text-muted">United by diversity</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Call to Action Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-lg-8 mx-auto">
+          <h2 class="display-5 fw-bold mb-4">Ready to Explore Your Heritage?</h2>
+          <p class="lead mb-4">
+            Join thousands of Nigerians and cultural enthusiasts discovering and preserving our rich heritage
+          </p>
+          <div class="d-flex gap-3 justify-content-center flex-wrap">
+            <a href="{% url 'account_signup' %}" class="btn btn-primary btn-lg">
+              <i class="fas fa-user-plus me-2"></i>Join Naiversity
+            </a>
+            <a href="{% url 'about' %}" class="btn btn-outline-dark btn-lg">
+              <i class="fas fa-info-circle me-2"></i>Learn More
+            </a>
+          </div>
+          <div class="row mt-5 text-center">
+            <div class="col-md-4">
+              <i class="fas fa-shield-alt fa-2x mb-3 text-dark"></i>
+              <h6>Secure & Private</h6>
+              <p class="small">Your cultural data is protected</p>
+            </div>
+            <div class="col-md-4">
+              <i class="fas fa-mobile-alt fa-2x mb-3 text-dark"></i>
+              <h6>Mobile Friendly</h6>
+              <p class="small">Access anywhere, anytime</p>
+            </div>
+            <div class="col-md-4">
+              <i class="fas fa-heart fa-2x mb-3 text-dark"></i>
+              <h6>Community Driven</h6>
+              <p class="small">Built by and for Nigerians</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock content %}
+{% block inline_javascript %}
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+
+      // Intersection Observer for fade-in animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, observerOptions);
+
+      // Observe all fade-in elements
+      document.querySelectorAll('.fade-in').forEach(element => {
+        observer.observe(element);
+      });
+
+      // Add parallax effect to hero section
+      window.addEventListener('scroll', () => {
+        const scrolled = window.pageYOffset;
+        const heroSection = document.querySelector('.hero-section');
+        if (heroSection) {
+          heroSection.style.transform = `translateY(${scrolled * 0.5}px)`;
+        }
+      });
+
+      // Add counter animation to statistics
+      const animateCounter = (element, target) => {
+        const increment = target / 100;
+        let current = 0;
+        const timer = setInterval(() => {
+          current += increment;
+          if (current >= target) {
+            current = target;
+            clearInterval(timer);
+          }
+          element.textContent = Math.floor(current) + (target >= 1000000 ? 'M+' : target >= 1000 ? 'K+' : '+');
+        }, 20);
+      };
+
+      // Animate counters when they come into view
+      const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const element = entry.target;
+            const originalText = element.textContent;
+            const number = parseInt(originalText.replace(/[^0-9]/g, ''));
+
+            if (number) {
+              animateCounter(element, number);
+            }
+
+            counterObserver.unobserve(element);
+          }
+        });
+      }, {
+        threshold: 0.5
+      });
+
+      document.querySelectorAll('.stat-number').forEach(counter => {
+        counterObserver.observe(counter);
+      });
+    });
+  </script>
+{% endblock inline_javascript %}
