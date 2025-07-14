@@ -96,8 +96,8 @@
           </div>
         </nav>
       </div>
-      <div class="container">
-        {% if messages %}
+      {% if messages %}
+        <div class="container">
           {% for message in messages %}
             <div class="alert alert-dismissible {% if message.tags %}alert-{{ message.tags }}{% endif %}">
               {{ message }}
@@ -107,13 +107,15 @@
                       aria-label="Close"></button>
             </div>
           {% endfor %}
-        {% endif %}
-        {% block main %}
-          {% block content %}
+        </div>
+      {% endif %}
+      {% block main %}
+        {% block content %}
+          <div class="container">
             <p>Use this document as a way to quick start any new project.</p>
-          {% endblock content %}
-        {% endblock main %}
-      </div>
+          </div>
+        {% endblock content %}
+      {% endblock main %}
     {% endblock body %}
     <!-- /container -->
     {% block modal %}
