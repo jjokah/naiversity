@@ -10,3 +10,4 @@ Collectfasta==3.3.0  # https://github.com/jasongi/collectfasta
 # ------------------------------------------------------------------------------
 django-storages[google]==1.14.6  # https://github.com/jschneier/django-storages
 django-anymail[mailgun]==13.0  # https://github.com/anymail/django-anymail
+whitenoise
