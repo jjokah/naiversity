@@ -180,3 +180,8 @@ SPECTACULAR_SETTINGS["SERVERS"] = [
 ]
 # Your stuff...
 # ------------------------------------------------------------------------------
+
+# Google Cloud
+# ------------------------------------------------------------------------------
+# https://googleapis.dev/python/storage/latest/index.html
+GS_CREDENTIALS = env.json("GOOGLE_APPLICATION_CREDENTIALS_JSON", default=None)
